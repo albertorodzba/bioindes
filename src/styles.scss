@@ -1,1 +1,105 @@
 /* You can add global styles to this file, and also import other style files */
+// Breakpoints
+$breakpoint-xsm: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Vars
+$default-content-max-width: 1200px;
+
+:root {
+  --breakpoint-xsm: #{ $breakpoint-xsm };
+  --breakpoint-sm: #{ $breakpoint-sm };
+  --breakpoint-md: #{ $breakpoint-md };
+  --breakpoint-lg: #{ $breakpoint-lg };
+  --breakpoint-xl: #{ $breakpoint-xl };
+  --default-content-max-width: #{ $default-content-max-width };
+  --title-letter-spacing: 1px;
+  --strong-blue: #182660;
+  --middle-blue: #284787;
+  --light-blue: #056FB4;
+  --yellow: #B9F54C;
+  --green: #53A30D;
+  --white: #FFFFFF;
+}
+
+// General Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Body Defaults
+body {
+  margin: 0;
+  font-family: "Poppins", serif; // Ajusta según tu preferencia
+  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
+}
+
+// Anchor Tags
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  &:focus {
+    text-decoration: underline; // Puedes ajustarlo según el diseño
+  }
+}
+
+// Lists
+ul,
+ol {
+  list-style: none;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; // Elimina los espacios blancos adicionales
+}
+
+// Tables
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+// Inputs and Buttons
+input,
+button,
+textarea,
+select {
+  font: inherit; // Hereda la tipografía del padre
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+// Strong and Bold
+strong {
+  font-weight: bold;
+}
+
+// Blockquote
+blockquote {
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 4px solid #ccc;
+}
+

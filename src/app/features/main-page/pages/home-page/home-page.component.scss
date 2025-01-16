@@ -1,0 +1,44 @@
+.banner {
+  height: 500px;
+  background-image: url('/images/worker.jpg');
+  background-size: cover;
+  background-position: top;
+  background-color: rgba(0, 0, 0, 0.50);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  padding: 0 30px
+}
+
+.banner__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: var(--title-letter-spacing);
+}
+
+.banner__text {
+  width: 350px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.7rem;
+}
+// TODO: hacer este boton un componente independiente
+.banner__button {
+  background-color: var(--white);
+  color: var(--strong-blue);
+  border: none;
+  border-radius: 50px;
+  padding: 5px 50px;
+  margin-top: 15px;
+}

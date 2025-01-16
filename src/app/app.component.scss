@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper {
+  max-width: var(--default-content-max-width);
+  width: 100%;
+  //background-color: blue;
+  height: 100px;
+}
+

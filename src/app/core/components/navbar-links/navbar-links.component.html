@@ -1,0 +1,9 @@
+<div class="navbar-links__container">
+  <ul class="navbar-links__link-options">
+    @for (link of navbarLinks; track link.name){
+      <li class="navbar-links__link">
+        {{ link.name }}
+      </li>
+    }
+  </ul>
+</div>
