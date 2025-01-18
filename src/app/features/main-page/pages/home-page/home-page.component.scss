@@ -1,11 +1,12 @@
 .banner {
-  height: 500px;
+  height: 600px;
   background-image: url('/images/worker.jpg');
   background-size: cover;
   background-position: top;
   background-color: rgba(0, 0, 0, 0.50);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   color: #ffffff;
   padding: 0 30px
@@ -25,6 +26,7 @@
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: var(--title-letter-spacing);
+  text-align: center;
 }
 
 .banner__text {
