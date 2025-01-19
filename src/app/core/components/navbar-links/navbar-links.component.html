@@ -1,8 +1,10 @@
 <div class="navbar-links__container">
   <ul class="navbar-links__link-options">
     @for (link of navbarLinks; track link.name){
-      <li class="navbar-links__link">
-        {{ link.name }}
+      <li class="navbar-links__link" >
+        <a [routerLink]="home" routerLinkActive="active">
+          {{ link.name }}
+        </a>
       </li>
     }
   </ul>

@@ -11,7 +11,8 @@ import {NavbarLink} from "../../models/navbarLink.interface";
 export class NavbarLinksComponent {
   navbarLinks: NavbarLink[] = [
     {
-      name: "HOME"
+      name: "HOME",
+      href: "home",
     },
     {
       name: "NOSOTROS"
