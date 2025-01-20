@@ -2,7 +2,7 @@
   <ul class="navbar-links__link-options">
     @for (link of navbarLinks; track link.name){
       <li class="navbar-links__link" >
-        <a [routerLink]="home" routerLinkActive="active">
+        <a [routerLink]="link.href" routerLinkActive="active">
           {{ link.name }}
         </a>
       </li>
