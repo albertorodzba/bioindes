@@ -1,0 +1,73 @@
+export const servicios = [
+  {
+    title: "Estudios Ambientales",
+    cardDescription: "Manifiesto de impacto ambiental, programa para la prevención de accidentes, estudio de riesgo ambiental...",
+    fullText: "",
+    imgPath: "/images/services/EstudiosAmbientales.png",
+    iconPath: "",
+  },
+  {
+    title: "Administración de Riesgo",
+    cardDescription: "Analisis de riesgo de proceso, metodología HazOp, árbol de fallas...",
+    fullText: "",
+    imgPath: "/images/services/AdministracionDeRiesgo.jpg",
+    iconPath: "",
+  },
+  {
+    title: "Topografía",
+    cardDescription: "Topografía con equipo satelital, cartografía, batimetría...",
+    fullText: "",
+    imgPath: "/images/services/Topografia.jpg",
+    iconPath: "",
+  },
+  {
+    title: "Radiodetección",
+    cardDescription: "Búsqueda de tubería subterránea, equipo RD-8100....",
+    fullText: "",
+    imgPath: "/images/services/Radiodeteccion.jpg",
+    iconPath: "",
+  },
+  {
+    title: "Geofísica",
+    cardDescription: "Caracterización de sitios contaminados, remediación de sitios contaminados...",
+    fullText: "",
+    imgPath: "/images/services/Geofisica.jpg",
+    iconPath: "",
+  },
+  {
+    title: "Obra civil",
+    cardDescription: "Ejecución y supervisión de obra civil y electromecánica...",
+    fullText: "",
+    imgPath: "/images/services/ObraCivil.jpg",
+    iconPath: "",
+  },
+  {
+    title: "Termofusión",
+    cardDescription: "Membrana ecológica, termofusión de liner HDPE...",
+    fullText: "",
+    imgPath: "/images/services/Termofusion.jpg",
+    iconPath: "",
+  },
+  {
+    title: "Perforación",
+    cardDescription: "Perforación rotaria y/o neumática, pozos de monitoreo, pozos para extracción de agua...",
+    fullText: "",
+    imgPath: "/images/services/Perforacion.jpg",
+    iconPath: "",
+  },
+  {
+    title: "Tierras físicas",
+    cardDescription: "Equipo Fluke 1623, medición de tierras fisicas...",
+    fullText: "",
+    imgPath: "/images/services/TierrasFisicas.jpg",
+    iconPath: "",
+  },
+  {
+    title: "Tecnología del proceso",
+    cardDescription: "Diagramas de tubería e instrumentación (DTI's)...",
+    fullText: "",
+    imgPath: "/images/services/TecnologiaDelProceso.jpg",
+    iconPath: "",
+  },
+
+]

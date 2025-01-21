@@ -1,14 +1,16 @@
 <div class="card">
   <div class="card__header">
     <div class="card__icon">
-      <img class="card__img" [src]="iconUrl" alt="Icon" srcset="">
+      <img class="card__img-icon" [src]="iconUrl" alt="Icon" srcset="">
     </div>
     <div class="card__description">
-      <span class="card__title">{{ title }}</span>
-      <span class="card__info"> {{ description }}</span>
+      <span class="card__title">{{ cardInfo.title }}</span>
+      <span class="card__info"> {{ cardInfo.cardDescription }}</span>
     </div>
   </div>
   <div class="card__image">
-    <img class="card__img" [src]="imageUrl" alt="" srcset="">
+    <img class="card__img" [src]="cardInfo.imgPath" alt="" srcset="">
+    <div class="card__gradient"></div>
   </div>
+  <button class="card__button" type="button">CONOCER MÁS</button>
 </div>

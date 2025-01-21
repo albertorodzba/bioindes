@@ -10,6 +10,7 @@
 
   color: #ffffff;
   padding: 0 30px
+
 }
 
 .banner__info{
@@ -43,4 +44,47 @@
   border-radius: 50px;
   padding: 5px 50px;
   margin-top: 15px;
+}
+
+.services-section__cards-wrapper {
+  width: 100%;
+  display: grid;
+  grid: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 50px 30px;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.no-overflow {
+  overflow: visible;
+}
+
+.action-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--strong-blue);
+  cursor: pointer;
+}
+
+
+.material-symbols-outlined {
+  font-size: 3rem !important;
+}
+
+.hide-services {
+  height: 300px;
+}
+
+.show-services {
+  height: fit-content;
 }

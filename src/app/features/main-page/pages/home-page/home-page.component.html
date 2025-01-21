@@ -19,8 +19,14 @@
       <span> SERVICIOS </span>
     </div>
 
-    <div class="services-section__cards-wrapper">
-      <card></card>
+    <div class="services-section__cards-wrapper" [ngClass]="servicesSectionClass">
+      @for (service of services; track service.title){
+        <card [cardInfo]="service"></card>
+      }
+    </div>
+    <div class="action-area" (click)="toggleServicesView()">
+      <span class="action-area__text">MOSTRAR MÁS</span>
+      <span class="action-area__icon material-symbols-outlined">keyboard_arrow_down</span>
     </div>
   </section>
 </div>
