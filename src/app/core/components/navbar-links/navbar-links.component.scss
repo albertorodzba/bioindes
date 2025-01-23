@@ -1,5 +1,4 @@
 .navbar-links__container{
-
 }
 .navbar-links__link-options{
   display: flex;
@@ -13,3 +12,8 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: var(--breakpoint-xsm)) {
+  .navbar-links__container{
+    display: none;
+  }
+}

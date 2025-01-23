@@ -15,21 +15,21 @@ import {NgClass} from "@angular/common";
 })
 export class HomePageComponent {
   services = servicios;
-  fullServicesView: boolean = false;
-  toggleButtonText: string = "MOSTRAR MÁS";
+  showAllCardServices: boolean = false;
+  textButton: string = "MOSTRAR MÁS";
 
   toggleServicesView(): void {
-    this.fullServicesView = !this.fullServicesView;
-    if ( this.fullServicesView === true ) {
-      this.toggleButtonText = "MOSTRAR MENOS";
+    this.showAllCardServices = !this.showAllCardServices;
+    if ( this.showAllCardServices === true ) {
+      this.textButton = "MOSTRAR MENOS";
     } else {
-      this.toggleButtonText = "MOSTRAR MÁS";
+      this.textButton = "MOSTRAR MÁS";
     }
   }
 
   get servicesSectionClass(): string {
-    let classService: string = "";
-    classService = this.fullServicesView ? "show-services no-overflow" : "hide-services overflow";
-    return classService;
+    let servicesStyle: string = "";
+    servicesStyle = this.showAllCardServices ? "show-services no-overflow" : "hide-services overflow";
+    return servicesStyle;
   }
 }

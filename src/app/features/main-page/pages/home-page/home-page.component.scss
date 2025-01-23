@@ -1,5 +1,6 @@
+@import "../../../../../styles.scss";
 .banner {
-  height: 600px;
+  height: 37rem;
   background-image: url('/images/worker.jpg');
   background-size: cover;
   background-position: top;
@@ -25,7 +26,7 @@
 
 .banner__title {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 5rem;
   letter-spacing: var(--title-letter-spacing);
   text-align: center;
 }
@@ -34,7 +35,7 @@
   width: 350px;
   text-align: center;
   font-weight: 200;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 // TODO: hacer este boton un componente independiente
 .banner__button {
@@ -48,6 +49,7 @@
 
 .services-section__cards-wrapper {
   width: 100%;
+  max-width: 100%;
   display: grid;
   grid: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 50px 30px;
@@ -88,3 +90,20 @@
 .show-services {
   height: fit-content;
 }
+
+@media (min-width: 0px) and (max-width: $breakpoint-md) {
+  .services-section__cards-wrapper{
+    grid: repeat(9, 1fr) / repeat(1, 1fr);
+  }
+  .banner__title {
+    line-height: 3rem;
+    margin: 1.5rem;
+    font-size: 3rem;
+  }
+}
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  .services-section__cards-wrapper{
+    grid: repeat(5, 1fr) / repeat(2, 1fr);
+  }
+}
+
