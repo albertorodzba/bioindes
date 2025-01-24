@@ -5,6 +5,11 @@
         <img src="/images/Bioindes_logo.png" alt="Bioindes" class="navbar__logo">
       </a>
     </div>
-    <navbar-links></navbar-links>
+<!--    {{ screenWidth }}-->
+    @if (screenWidth >= 576){
+      <navbar-links></navbar-links>
+    } @else {
+      <span class="material-symbols-outlined navbar__icon-menu" aria-hidden="true">menu</span>
+    }
   </div>
 </nav>

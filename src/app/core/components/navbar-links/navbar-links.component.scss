@@ -1,3 +1,5 @@
+@import "../../../../styles.scss";
+
 .navbar-links__container{
 }
 .navbar-links__link-options{
@@ -12,8 +14,11 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: var(--breakpoint-xsm)) {
+@media screen and (max-width: $breakpoint-sm) {
   .navbar-links__container{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
