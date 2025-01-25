@@ -1,10 +1,19 @@
 import { Routes } from '@angular/router';
 import {HomePageComponent} from "./features/main-page/pages/home-page/home-page.component";
+import {AboutUsComponent} from "./features/about-us/pages/about-us/about-us.component";
 
 
 export const routes: Routes = [
   {
-    path: "home",
+    path: "",
     component: HomePageComponent,
+  },
+  {
+    path: "inicio",
+    redirectTo: ""
+  },
+  {
+    path: "nosotros",
+    component: AboutUsComponent,
   }
 ];

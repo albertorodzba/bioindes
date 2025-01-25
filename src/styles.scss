@@ -6,6 +6,9 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
+$blue-horizontal-gradient: linear-gradient(90deg, var(--light-blue) 0%, var(--strong-blue) 90%);
+$line-height-sm: 0.8rem;
+$line-height-lg: 1.3rem;
 // Vars
 $default-content-max-width: 1200px;
 
@@ -24,6 +27,8 @@ $default-content-max-width: 1200px;
   --yellow: #B9F54C;
   --green: #53A30D;
   --white: #FFFFFF;
+  --line-height-sm: #{ $line-height-sm };
+  --line-height-lg: #{ $line-height-lg };
 }
 
 // General Reset
@@ -127,3 +132,11 @@ button {
   direction: ltr;
   user-select: none; /* Propiedad estándar */
 }
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--strong-blue);
+}
+
+

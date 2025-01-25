@@ -12,11 +12,12 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
 export class NavbarLinksComponent {
   navbarLinks: NavbarLink[] = [
     {
-      name: "HOME",
-      href: "home",
+      name: "INICIO",
+      href: "inicio",
     },
     {
-      name: "NOSOTROS"
+      name: "NOSOTROS",
+      href: "nosotros",
     },
     {
       name: "SERVICIOS"
