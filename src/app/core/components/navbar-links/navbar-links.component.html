@@ -6,6 +6,13 @@
           {{ link.name }}
         </a>
       </li>
+      @if(link?.children) {
+        <div class="navbar__link-submenu">
+          @for(element of link.children; track element.name) {
+            <span> {{ element.name}}</span>
+          }
+        </div>
+      }
     }
   </ul>
 </div>

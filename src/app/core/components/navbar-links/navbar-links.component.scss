@@ -14,6 +14,17 @@
   cursor: pointer;
 }
 
+.navbar__link-submenu{
+  height: fit-content;
+  //background-color: var(--white);
+  background-color: red;
+  width: 100%;
+  padding: 1em 3em;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
 @media screen and (max-width: $breakpoint-sm) {
   .navbar-links__container{
     display: flex;

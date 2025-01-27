@@ -1,0 +1,36 @@
+@import "../../../../../styles.scss";
+
+.form__input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  width: 100%;
+  z-index: 1;
+}
+
+label{
+  cursor: text;
+  z-index: 2;
+}
+
+.form__label {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.7rem;
+  font-size: $font-size-input;
+  transition: 200ms ease;
+}
+
+.form__input:focus ~ label,
+.form__input:not(:placeholder-shown) ~ label
+//.form__input:not(:focus) ~ label
+{
+  background-color: var(--white);
+  font-size: 0.7em;
+  top: -0.6rem;
+  left: 1rem;
+}
+

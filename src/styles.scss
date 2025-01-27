@@ -10,6 +10,7 @@ $blue-horizontal-gradient: linear-gradient(90deg, var(--light-blue) 0%, var(--st
 $line-height-sm: 0.8rem;
 $line-height-lg: 1.3rem;
 $padding-mobile-x: 3em;
+$font-size-input: 0.8rem;
 // Vars
 $default-content-max-width: 1200px;
 
@@ -86,6 +87,18 @@ select {
   border: none;
   outline: none;
 }
+
+input, textarea {
+  border: 1px solid var(--strong-blue);
+  border-radius: 5px;
+  padding: 0.4em 0.6em;
+  font-size: $font-size-input;
+}
+
+input:focus {
+  outline: 1.5px solid var(--strong-blue-emphasis);
+}
+
 
 button {
   cursor: pointer;
