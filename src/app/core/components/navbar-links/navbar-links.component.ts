@@ -23,7 +23,8 @@ export class NavbarLinksComponent {
       name: "SERVICIOS"
     },
     {
-      name: "CONTACTO"
+      name: "CONTACTO",
+      href: "contacto",
     }
   ]
 }

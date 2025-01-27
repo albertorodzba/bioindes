@@ -36,7 +36,7 @@
   text-align: start;
 }
 
-.section__title--text-align-start {
+.section__title--text-align {
   text-align: start;
   align-items: start;
 }
@@ -63,6 +63,8 @@
 .section__img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 
@@ -76,4 +78,50 @@ hr {
   width: 6px;
   border: none;
   background-color: var(--white)
+}
+
+@media (min-width: 0) and (max-width: $breakpoint-md) {
+  .sections-wrapper {
+    flex-direction: column;
+  }
+  .section--nosotros{
+    flex-direction: column-reverse;
+  }
+
+  .section__info {
+    padding: 3em $padding-mobile-x;
+  }
+
+  .section__title--text-align {
+    align-items: center;
+    text-align: center;
+  }
+
+  .section__p {
+    text-align: center;
+  }
+
+  .section__title-decoration {
+    position: absolute;
+    right: 0;
+    left: 0rem;
+    top: -0.4rem
+  }
+
+  .section--mision,
+  .section--vision,
+  .section__info--nosotros,
+  .section__img-wrapper {
+    width: 100%;
+  }
+
+  .section__img-wrapper {
+    height: 400px;
+  }
+}
+
+@media (min-width: 0) and (max-width: $breakpoint-sm) {
+  .section__img-wrapper {
+    height: 300px;
+  }
 }
