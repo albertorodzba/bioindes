@@ -1,18 +1,21 @@
 <div class="navbar-links__container">
   <ul class="navbar-links__link-options">
     @for (link of navbarLinks; track link.name){
-      <li class="navbar-links__link" >
+      <li class="navbar-links__link" (mouseenter)="onMouseEnter(link.name)">
         <a [routerLink]="link.href" routerLinkActive="active">
           {{ link.name }}
         </a>
       </li>
-      @if(link?.children) {
-        <div class="navbar__link-submenu">
-          @for(element of link.children; track element.name) {
-            <span> {{ element.name}}</span>
-          }
-        </div>
-      }
     }
   </ul>
+  @if(currentLinkSelected.length > 0 && currentLinkSelected[0].children && isMouseEnter) {
+    <div class="navbar__submenu" (mouseleave)="onMouseLeave()">
+      @for(contentChildren of currentLinkSelected[0].children; track contentChildren.name) {
+        <a class="navbar__submenu-a">
+          <img class="navbar__submenu-icon" [src]="contentChildren.icon" alt="" class="navbar__submenu-icon"/>
+          <p class="navbar__submenu-p"> {{ contentChildren.name }}</p>
+        </a>
+      }
+    </div>
+  }
 </div>
