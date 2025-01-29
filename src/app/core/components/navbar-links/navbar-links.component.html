@@ -1,8 +1,8 @@
 <div class="navbar-links__container">
   <ul class="navbar-links__link-options">
-    @for (link of navbarLinks; track link.name){
+    @for (link of sections; track link.name){
       <li class="navbar-links__link" (mouseenter)="onMouseEnter(link.name)">
-        <a [routerLink]="link.href" routerLinkActive="active">
+        <a class="navbar-links__a" [routerLink]="link.href" routerLinkActive="active" [routerLinkActiveOptions] ="{exact: true}">
           {{ link.name }}
         </a>
       </li>

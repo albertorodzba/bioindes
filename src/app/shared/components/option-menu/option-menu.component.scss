@@ -1,0 +1,53 @@
+.menu__item {
+  color: var(--strong-blue);
+  padding: 1em 1em;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+
+.menu-item__parent{
+  display: flex;
+}
+
+.menu-item__a-wrapper {
+  width: 80%;
+}
+
+.menu-item__a {
+  font-size: 0.9rem;
+}
+
+.menu-item__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.menu-item__icon {
+  width: 100%;
+  text-align: center;
+}
+
+// Children sections
+.menu-item__children {
+  padding: 1rem 0 0 1rem;
+  width: 100%;
+}
+
+.menu-item__a-wrapper--w-100 {
+  width: 100%;
+  display: flex;
+  text-overflow: ellipsis;
+}
+
+.menu-item__a--children {
+  font-size: 0.8rem;
+  padding: .5em .5em;
+  width: 100%;
+}
+
+// classes for dynamic use
+.bg-white{
+  background-color: var(--white);
+}

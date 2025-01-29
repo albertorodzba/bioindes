@@ -28,9 +28,10 @@ $default-content-max-width: 1200px;
   --light-blue: #056FB4;
   --yellow: #B9F54C;
   --green: #53A30D;
-  --white: #FFFFFF;
+  --white: #e6e6e6;
   --line-height-sm: #{ $line-height-sm };
   --line-height-lg: #{ $line-height-lg };
+  --black-opacity-33: rgba(0, 0, 0, 0.33);
 }
 
 // General Reset
@@ -153,4 +154,35 @@ h1 {
   color: var(--strong-blue);
 }
 
+h3 {
+  font-size: 1.90rem;
+  font-weight: 500;
+}
 
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 0.31rem;
+  color: var(--green);
+}
+
+
+a {
+  letter-spacing: 0.06rem;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--green);
+}

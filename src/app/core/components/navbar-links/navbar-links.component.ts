@@ -2,6 +2,7 @@ import {Component, HostListener} from '@angular/core';
 import { NavbarLink } from "../../models/navbarLink.interface";
 import { RouterLink, RouterLinkActive } from "@angular/router";
 import {JsonPipe} from "@angular/common";
+import { Sections } from "../../data/sections";
 
 @Component({
   selector: 'navbar-links',
@@ -11,87 +12,30 @@ import {JsonPipe} from "@angular/common";
   styleUrl: './navbar-links.component.scss'
 })
 export class NavbarLinksComponent {
-  iconsDirPathBase: string = "/icons/outline-icons";
-  navbarLinks: NavbarLink[] = [
-    {
-      name: "INICIO",
-      href: "inicio",
-    },
-    {
-      name: "NOSOTROS",
-      href: "nosotros",
-      // children: [
-      //   {
-      //     name: "Nosotros",
-      //   },
-      //   {
-      //     name: "Misión",
-      //   },
-      //   {
-      //     name: "Visión",
-      //   }
-      // ]
-    },
-    {
-      name: "SERVICIOS",
-      children: [
-        {
-          name: "Estudios Ambientales",
-          icon: `${this.iconsDirPathBase}/EstudiosAmbientales.svg`,
-        },
-        {
-          name: "Topografía",
-          icon: `${this.iconsDirPathBase}/Topografia.svg`,
-        },
-        {
-          name: "Radiodetección",
-          icon: `${this.iconsDirPathBase}/Radiodeteccion.svg`,
-        },
-        {
-          name: "Geofísica",
-          icon: `${this.iconsDirPathBase}/Geofisica.svg`,
-        },
-        {
-          name: "Termofusión",
-          icon: `${this.iconsDirPathBase}/Termofusion.svg`,
-        },
-        {
-          name: "Perforación",
-          icon: `${this.iconsDirPathBase}/Perforacion.svg`,
-        },
-        {
-          name: "Tierras físicas",
-          icon: `${this.iconsDirPathBase}/TierrasFisicas.svg`,
-        },
-        {
-          name: "Tecnología del proceso",
-          icon: `${this.iconsDirPathBase}/TecnologiaDelProceso.svg`,
-        },
-      ]
-    },
-    {
-      name: "CONTACTO",
-      href: "contacto",
-    }
-  ];
-
+  sections: NavbarLink[] = Sections;
   isMouseEnter: boolean = false;
   currentLinkSelected: any = [];
 
   onMouseEnter(linkName: string ) {
     console.log(linkName, "pulsed");
     this.isMouseEnter = true;
-    this.currentLinkSelected = this.navbarLinks.filter((element) => element.name === linkName);
+    this.currentLinkSelected = this.sections.filter((element) => element.name === linkName);
     console.log("current selected", this.currentLinkSelected);
   }
 
   onMouseLeave(){
     this.isMouseEnter = false;
     this.currentLinkSelected = [];
-    console.log("leave", this.navbarLinks);
   }
-  @HostListener("click", ["$event.target"])
-  onClickLister(targetClicked: any) {
-    console.log("target", targetClicked);
+  @HostListener("document:click", ["$event"])
+  onClickListener(event: any) {
+    console.log("target", event.target.className);
+    let targetClassNameClicked: string = event.target.className;
+    if (targetClassNameClicked === "navbar-links__link" || targetClassNameClicked === "navbar-links__a") {
+      console.log("targetActive", event);
+    } else {
+      this.isMouseEnter = false;
+    }
   }
+
 }

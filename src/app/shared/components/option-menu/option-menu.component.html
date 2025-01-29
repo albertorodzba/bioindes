@@ -1,0 +1,25 @@
+<div class="menu__item" [ngClass]="getClassWhenOpen()">
+  <div class="menu-item__parent" (click)="toggleChildrenSection()">
+    <div class="menu-item__a-wrapper">
+      <a class="menu-item__a">{{ section.name }}</a>
+    </div>
+    @if(section.children) {
+      <div class="menu-item__icon-wrapper">
+        <span
+          class="menu-item__icon material-symbols-outlined"
+        >
+          arrow_drop_down
+        </span>
+      </div>
+    }
+  </div>
+  @if(isOptionMenuOpen && section.children) {
+    <div class="menu-item__children">
+      @for( section of section.children; track section.name) {
+        <div class="menu-item__a-wrapper menu-item__a-wrapper--w-100">
+          <a class="menu-item-a menu-item__a--children">{{ section.name }}</a>
+        </div>
+      }
+    </div>
+  }
+</div>

@@ -15,19 +15,19 @@
 }
 
 .navbar__submenu{
-  height: fit-content;
   background-color: var(--white);
-  max-width: 70rem;
-  padding: 1em 3em;
-  position: absolute;
-  top: 50px;
-  right: 10px;
   border-radius: 15px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   color: var(--strong-blue);
-  gap: 2em 2em;
+  display: grid;
+  gap: 2em .5em;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
+  height: fit-content;
+  max-width: 70rem;
+  padding: 3em 2em;
+  position: absolute;
+  right: 0px;
+  top: 50px;
 }
 
 .navbar__submenu-a {
@@ -40,11 +40,13 @@
 }
 
 .navbar__submenu-icon {
-  width: 4rem;
+  width: 3rem;
+  margin-bottom: 1em;
 }
 
 .navbar__submenu-p {
   text-align: center;
+  font-size: 0.8rem;
 }
 
 

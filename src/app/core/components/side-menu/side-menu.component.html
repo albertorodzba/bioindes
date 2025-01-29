@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="menu">
+    <div class="menu__header">
+      <div class="menu__title">
+        <h3 class="menu__h3"> MENÚ </h3>
+        <div class="menu__decoration-wrapper">
+<!--          <img src="/icons/CurvaDegradado.svg"-->
+<!--               alt="Decoration"-->
+<!--               class="menu__title-decoration">-->
+<!--        </div>-->
+      </div>
+    </div>
+    <div class="menu__icon-wrapper">
+      <span class="material-symbols-outlined menu__icon">close</span>
+    </div>
+
+    <div class="menu__options-wrapper">
+      @for (option of sections; track option.name) {
+        <option-menu [section]="option"></option-menu>
+      }
+    </div>
+  </div>
+</div>
