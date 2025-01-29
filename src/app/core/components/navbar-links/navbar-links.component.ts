@@ -90,5 +90,8 @@ export class NavbarLinksComponent {
     this.currentLinkSelected = [];
     console.log("leave", this.navbarLinks);
   }
-  @HostListener(["window: "])
+  @HostListener("click", ["$event.target"])
+  onClickLister(targetClicked: any) {
+    console.log("target", targetClicked);
+  }
 }
