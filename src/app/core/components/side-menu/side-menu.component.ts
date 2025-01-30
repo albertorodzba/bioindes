@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
-import {OptionMenuComponent} from "../../../shared/components/option-menu/option-menu.component";
-import {NavbarLink} from "../../models/navbarLink.interface";
-import {Sections} from "../../data/sections";
+import { Component, HostListener, inject } from '@angular/core';
+import { OptionMenuComponent } from "../../../shared/components/option-menu/option-menu.component";
+import { NavbarLink } from "../../models/navbarLink.interface";
+import { Sections } from "../../data/sections";
+import { MenuService } from "../../../shared/services/menu.service";
 
 @Component({
   selector: 'side-menu',
@@ -14,11 +15,27 @@ import {Sections} from "../../data/sections";
 })
 export class SideMenuComponent {
   sections: NavbarLink[] = Sections;
+  menuService: MenuService = inject(MenuService);
+  @HostListener('click', ['$event'])
   onClickListener(event: any) {
     console.log("target", event.target.className);
     let targetClassNameClicked: string = event.target.className;
-    if (targetClassNameClicked === "navbar-links__link" || targetClassNameClicked === "navbar-links__a") {
-      console.log("targetActive", event);
+    if (targetClassNameClicked === "wrapper") {
+      this.closeSideMenu();
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event: any): void {
+    const screenWidth = event.target.innerWidth;
+    const screenHeight = event.target.innerHeight;
+
+    if (screenWidth > 576) {
+      this.closeSideMenu();
+    }
+  }
+
+  closeSideMenu(): void {
+    this.menuService.setIsMenuOpen(false);
   }
 }

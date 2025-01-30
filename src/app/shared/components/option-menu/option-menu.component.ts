@@ -2,12 +2,14 @@ import {Component, Input} from '@angular/core';
 import { NavbarLink } from "../../../core/models/navbarLink.interface";
 import { Sections } from "../../../core/data/sections";
 import {NgClass} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'option-menu',
   standalone: true,
   imports: [
-    NgClass
+    NgClass,
+    RouterLink
   ],
   templateUrl: './option-menu.component.html',
   styleUrl: './option-menu.component.scss'

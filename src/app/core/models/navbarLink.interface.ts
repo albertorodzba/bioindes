@@ -3,4 +3,5 @@ export interface NavbarLink {
   icon?: string,
   href?: string,
   children?: NavbarLink[],
+  fragment?: string,
 }

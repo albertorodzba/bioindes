@@ -1,6 +1,6 @@
 <div class="menu__item" [ngClass]="getClassWhenOpen()">
   <div class="menu-item__parent" (click)="toggleChildrenSection()">
-    <div class="menu-item__a-wrapper">
+    <div class="menu-item__a-wrapper" [routerLink]="section.href">
       <a class="menu-item__a">{{ section.name }}</a>
     </div>
     @if(section.children) {
@@ -16,7 +16,10 @@
   @if(isOptionMenuOpen && section.children) {
     <div class="menu-item__children">
       @for( section of section.children; track section.name) {
-        <div class="menu-item__a-wrapper menu-item__a-wrapper--w-100">
+        <div
+          class="menu-item__a-wrapper menu-item__a-wrapper--w-100"
+          [routerLink]="section.href"
+          [fragment]="section.fragment">
           <a class="menu-item-a menu-item__a--children">{{ section.name }}</a>
         </div>
       }

@@ -11,12 +11,18 @@ export const Sections: NavbarLink[] =  [
     children: [
       {
         name: "Nosotros",
+        fragment: "nosotros",
+        href: "/nosotros/",
       },
       {
         name: "Misión",
+        fragment: "mision",
+        href: "/nosotros/",
       },
       {
         name: "Visión",
+        fragment: "vision",
+        href: "/nosotros/",
       }
     ]
   },

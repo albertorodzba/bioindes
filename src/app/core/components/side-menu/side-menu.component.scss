@@ -3,6 +3,7 @@
   height: 100%;
   width: 100%;
   background-color: var(--black-opacity-33);
+
 }
 
 .menu {
@@ -12,6 +13,7 @@
   height: 100%;
   padding: 3em 1.25rem;
   position: relative;
+  overflow-y: scroll;
 }
 
 .menu__h3 {

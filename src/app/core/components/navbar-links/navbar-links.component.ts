@@ -31,7 +31,7 @@ export class NavbarLinksComponent {
   onClickListener(event: any) {
     console.log("target", event.target.className);
     let targetClassNameClicked: string = event.target.className;
-    if (targetClassNameClicked === "navbar-links__link" || targetClassNameClicked === "navbar-links__a") {
+    if (targetClassNameClicked.includes("navbar")) {
       console.log("targetActive", event);
     } else {
       this.isMouseEnter = false;
