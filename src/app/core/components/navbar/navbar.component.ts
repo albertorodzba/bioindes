@@ -29,7 +29,9 @@ export class NavbarComponent {
   }
 
   openSideMenu(): void {
+    console.log("se ejecuto")
     if(this.isMobileView && !this.menuService.getIsMenuOpen()) {
+      console.log("se abrio")
       this.menuService.setIsMenuOpen(true);
     }
   }

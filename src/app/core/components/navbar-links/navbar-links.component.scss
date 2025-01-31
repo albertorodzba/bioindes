@@ -16,6 +16,7 @@
 
 .navbar__submenu{
   background-color: var(--white);
+  background-color: red;
   border-radius: 15px;
   color: var(--strong-blue);
   display: grid;
@@ -27,7 +28,7 @@
   padding: 3em 2em;
   position: absolute;
   right: 0px;
-  top: 50px;
+  top: 20;
 }
 
 .navbar__submenu-a {

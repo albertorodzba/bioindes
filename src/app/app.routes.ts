@@ -16,6 +16,11 @@ export const routes: Routes = [
   {
     path: "nosotros",
     component: AboutUsComponent,
+    // children:[
+    //   {
+    //     path: "",
+    //   }
+    // ]
   },
   {
     path: "contacto",
