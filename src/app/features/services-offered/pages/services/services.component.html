@@ -1,1 +1,3 @@
-<p>services works!</p>
+@for(service of servicesOffered; track service.name) {
+  <dual-panel-card [serviceOffered]="service"></dual-panel-card>
+}
