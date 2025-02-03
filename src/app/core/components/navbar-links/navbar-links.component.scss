@@ -9,6 +9,14 @@
   font-size: 0.8rem;
   gap: 30px;
 }
+
+.navbar-links__link{
+  //background-color: #182660;
+  position: relative;
+  //display: flex;
+  //flex-direction: column;
+}
+
 .navbar-links__link:hover{
   color: #53A30D;
   cursor: pointer;
@@ -21,14 +29,14 @@
   color: var(--strong-blue);
   display: grid;
   gap: 2em .5em;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
   grid-template-rows: repeat(auto-fill, 1fr);
   height: fit-content;
   max-width: 70rem;
   padding: 3em 2em;
   position: absolute;
   right: 0px;
-  top: 20;
+  top: 50px;
 }
 
 .navbar__submenu-a {

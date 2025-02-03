@@ -1,4 +1,91 @@
+@import "../../../../styles.scss";
+
+$padding-first-panel: 4.3em;
+:host {
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+  position: relative;
+  z-index: 2!important;
+}
 .wrapper {
-  min-width: 200px;
+  height: 700px;
+  width: fit-content;
+  display: flex;
+}
+
+
+.first-panel {
+  padding: $padding-first-panel;
+  //padding: 69px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.first-panel__header {
+  display: flex;
+  align-items: center;
+}
+
+.first-panel__header, .first-panel__body {
+  padding-right: 2rem;
+  width: 100%;
+}
+
+.first-panel__p {
+  font-size: 0.8rem;
+}
+
+.first-panel__header{
+  margin-bottom: 2rem;
+}
+
+.first-panel__h2 {
+  color: var(--strong-blue);
+}
+// icono
+.first-panel__icon-wrapper{
+  margin-right: 1.8rem;
+}
+.first-panel__img {
+  width: 6rem;
+}
+
+.first-panel, .second-panel {
+  border-radius: 40px;
+  box-shadow: $box-shadow;
+  max-height: 512px;
+  min-height: 512px;
+  max-width: 638px;
+  background-color: var(--white);
+}
+
+.second-panel {
   overflow: hidden;
+}
+
+
+
+// SECOND PANEL
+.second-panel {
+  position: relative;
+  top: $padding-first-panel;
+  left: 0px;
+  right: 0px;
+  transform: translateX(-$padding-first-panel);
+}
+
+
+.second-panel__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: top;
+}
+
+.second-panel__extra {
+  position: absolute;
+  top:0;
 }

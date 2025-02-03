@@ -1,0 +1,11 @@
+@import "../../../../../styles.scss";
+.decoration {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  z-index: 1 !important;
+}
+
+.decoration:nth-child(odd) {
+  background: $blue-horizontal-gradient;
+}

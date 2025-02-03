@@ -1,7 +1,7 @@
 <div class="navbar-links__container">
   <ul class="navbar-links__link-options">
     @for (link of sections; track link.name){
-      <li class="navbar-links__link" [routerLink]="link.href" (mouseenter)="onMouseEnter(link.name)">
+      <li #navbar_li class="navbar-links__link" [routerLink]="link.href" (mouseenter)="onMouseEnter(link.name)">
         <a class="navbar-links__a" routerLinkActive="active" [routerLinkActiveOptions] ="{exact: true}">
           {{ link.name }}
         </a>
@@ -9,7 +9,8 @@
     }
   </ul>
   @if(currentLinkSelected.length > 0 && currentLinkSelected[0].children && isMouseEnter) {
-    <div class="navbar__submenu" (mouseleave)="onMouseLeave()">
+<!--  @if(true){-->
+    <div #submenu class="navbar__submenu" (mouseleave)="onMouseLeave()">
       @for(contentChildren of currentLinkSelected[0].children; track contentChildren.name) {
         <a class="navbar__submenu-a" [routerLink]="contentChildren.href" [fragment]="contentChildren.fragment">
           <img class="navbar__submenu-icon" [src]="contentChildren.icon" alt="" class="navbar__submenu-icon"/>

@@ -7,12 +7,13 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 $blue-horizontal-gradient: linear-gradient(90deg, var(--light-blue) 0%, var(--strong-blue) 90%);
+$box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 $line-height-sm: 0.8rem;
 $line-height-lg: 1.3rem;
 $padding-mobile-x: 3em;
 $font-size-input: 0.8rem;
 // Vars
-$default-content-max-width: 1200px;
+$default-content-max-width: 1400px;
 
 :root {
   --breakpoint-xsm: #{ $breakpoint-xsm };
@@ -154,6 +155,11 @@ h1 {
   color: var(--strong-blue);
 }
 
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 h3 {
   font-size: 1.90rem;
   font-weight: 500;
@@ -186,3 +192,7 @@ a:hover {
   text-decoration: none;
   color: var(--green);
 }
+
+//.title-large {
+//  font-size: 2.5rem;
+//}
