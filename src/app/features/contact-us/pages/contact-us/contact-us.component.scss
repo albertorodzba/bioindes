@@ -1,28 +1,78 @@
+@import "../../../../../styles.scss";
 .wrapper{
   width: 100%;
-  height: 100%;
 }
 
 .dual-panel{
   display: flex;
-  height: 100%;
+  height: 33rem;
 }
 
 .dual-panel__img-wrapper{
-  width: 100%;
-  height: 100%;
+  position: relative;
   flex: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+.dual-panel__background-black{
+  background-color: $bg-black-op50;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .dual-panel__img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .dual-panel__form-wrapper{
+  flex: 1;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  padding: 4rem 4rem;
+  align-items: center;
+}
+
+.wrapper__p {
+  color: var(--gray);
+  margin: 1rem 0;
+}
+
+
+// text section
+.text {
+  position: absolute;
   width: 100%;
   height: 100%;
-  flex: 1;
-  padding: 0 1rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.text__h1 {
+  font-size: $font-size-xxl;
+  color: var(--white);
+}
+
+.text__decoration-div{
+  width: calc(100% + 2rem);
+}
+
+.social-network {
+  display: flex;
+  gap: 2rem;
+}
+.social-network__icon {
+  width: 36px;
 }

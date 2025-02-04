@@ -12,8 +12,9 @@ $line-height-sm: 0.8rem;
 $line-height-lg: 1.3rem;
 $padding-mobile-x: 3em;
 $font-size-input: 0.8rem;
-// Vars
 $default-content-max-width: 1400px;
+$font-size-xxl: 3.5rem;
+$bg-black-op50: rgba(0, 0, 0, 0.50);
 
 :root {
   --breakpoint-xsm: #{ $breakpoint-xsm };
@@ -30,6 +31,7 @@ $default-content-max-width: 1400px;
   --yellow: #B9F54C;
   --green: #53A30D;
   --white: #ffffff;
+  --gray: #989898;
   --line-height-sm: #{ $line-height-sm };
   --line-height-lg: #{ $line-height-lg };
   --black-opacity-33: rgba(0, 0, 0, 0.33);
@@ -91,7 +93,7 @@ select {
 }
 
 input, textarea {
-  border: 1px solid var(--strong-blue);
+  border: 1px solid var(--light-blue);
   border-radius: 5px;
   padding: 0.4em 0.6em;
   font-size: $font-size-input;
@@ -104,6 +106,7 @@ input:focus {
 
 button {
   cursor: pointer;
+  padding: 0.5rem;
 }
 
 // Headings
@@ -193,6 +196,4 @@ a:hover {
   color: var(--green);
 }
 
-//.title-large {
-//  font-size: 2.5rem;
-//}
+
