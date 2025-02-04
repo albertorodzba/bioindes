@@ -18,10 +18,22 @@ export class NavbarLinksComponent {
   @ViewChild("navbar_li") navbarLi!: ElementRef;
   @ViewChild("submenu") submenu!: ElementRef ;
 
-  onMouseEnter(linkName: string ) {
+  // onMouseEnter(linkName: string ) {
+  //   console.log(linkName, "entered");
+  //   this.isMouseEnter = true;
+  //   this.currentLinkSelected = this.sections.filter((element) => element.name === linkName);
+  //   if(this.currentLinkSelected.length > 0){
+  //     this.navbarLi?.nativeElement.appendChild(this.submenu);
+  //   }
+  // }
+
+  onMouseEnter(linkName: any ) {
     console.log(linkName, "entered");
+    const x = linkName.x;
+    const y = linkName.y;
+    const name = linkName.target.innerText;
     this.isMouseEnter = true;
-    this.currentLinkSelected = this.sections.filter((element) => element.name === linkName);
+    this.currentLinkSelected = this.sections.filter((element) => element.name === name);
     if(this.currentLinkSelected.length > 0){
       this.navbarLi?.nativeElement.appendChild(this.submenu);
     }
