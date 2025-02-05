@@ -4,11 +4,12 @@ import { NavbarComponent } from "./core/components/navbar/navbar.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import {SideMenuComponent} from "./core/components/side-menu/side-menu.component";
 import {MenuService} from "./shared/services/menu.service";
+import {FooterComponent} from "./core/components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, ReactiveFormsModule, SideMenuComponent, ],
+  imports: [RouterOutlet, NavbarComponent, ReactiveFormsModule, SideMenuComponent, FooterComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
