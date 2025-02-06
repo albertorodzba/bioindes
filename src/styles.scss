@@ -7,10 +7,12 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 $blue-horizontal-gradient: linear-gradient(90deg, var(--light-blue) 0%, var(--strong-blue) 90%);
+$green-horizontal-gradient: linear-gradient(90deg, var(--yellow) 0%, var(--green) 90%);
 $box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 $line-height-sm: 0.8rem;
 $line-height-lg: 1.3rem;
 $padding-mobile-x: 3em;
+$padding-mobile-x-sm: 2em;
 $font-size-input: 0.8rem;
 $default-content-max-width: 1400px;
 $bg-black-op50: rgba(0, 0, 0, 0.50);
@@ -18,6 +20,7 @@ $font-size-xxl: 3.5rem;
 $font-size-xl: 3rem;
 $font-size-l: 2.5rem;
 $font-size-m: 2rem;
+$font-size-sm: 1.2rem;
 
 :root {
   --breakpoint-xsm: #{ $breakpoint-xsm };

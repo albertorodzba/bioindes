@@ -6,6 +6,14 @@
   z-index: 1 !important;
 }
 
-.decoration:nth-child(odd) {
+//.decoration:nth-child(odd) {
+//  background: $blue-horizontal-gradient;
+//}
+
+.bg-linear-gradient-green {
+  background: $green-horizontal-gradient;
+}
+
+.bg-linear-gradient-blue {
   background: $blue-horizontal-gradient;
 }

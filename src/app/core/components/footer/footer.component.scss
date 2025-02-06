@@ -1,3 +1,4 @@
+@import "../../../../styles.scss";
 .wrapper {
   background: var(--strong-blue);
   width: 100%;
@@ -28,4 +29,26 @@ a {
 
 p {
   text-align: center;
+}
+
+@media (min-width: 0) and (max-width: $breakpoint-sm) {
+  .wrapper {
+    gap: 1rem;
+  }
+
+  .social-network {
+    display: flex;
+    gap: 2rem;
+  }
+  .social-network__icon {
+    width: 24px;
+  }
+
+  .logo-wrapper {
+    width: 12rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
 }

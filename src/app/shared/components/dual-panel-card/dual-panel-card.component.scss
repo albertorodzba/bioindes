@@ -8,6 +8,7 @@ $padding-first-panel: 4.3em;
   position: relative;
   z-index: 2!important;
 }
+
 .wrapper {
   height: 700px;
   width: fit-content;
@@ -78,14 +79,75 @@ $padding-first-panel: 4.3em;
 
 
 .second-panel__img {
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
   height: 100%;
   display: block;
-  vertical-align: top;
+  //vertical-align: top;
 }
 
 .second-panel__extra {
   position: absolute;
   top:0;
+}
+
+
+
+@media (min-width: 0) and (max-width: $breakpoint-lg) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    //padding: 0 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-panel__header, .first-panel__body {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .first-panel__p {
+    font-size: 0.7rem;
+  }
+
+  .first-panel__h2 {
+    color: var(--strong-blue);
+    font-size: $font-size-sm;
+  }
+
+  // SECOND PANEL
+  .second-panel {
+    position: relative;
+    top: -$padding-mobile-x-sm;
+    right: 0;
+    left: 0;
+    //top: $padding-first-panel;
+    //left: 0px;
+    //right: 0px;
+    transform: translateX(0);
+    height: 100%;
+    flex-basis: 100px;
+  }
+
+  .second-panel__img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+
+  .first-panel {
+    padding: $padding-mobile-x-sm $padding-mobile-x-sm  calc($padding-mobile-x-sm + 1em) $padding-mobile-x-sm  ;
+  }
+
+  .first-panel, .second-panel{
+    max-height: none;
+    min-height: 512px;
+    max-width: 80%;
+  }
+
+
 }
