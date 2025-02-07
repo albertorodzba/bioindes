@@ -1,11 +1,13 @@
 import {Component, Input} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'card',
   standalone: true,
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterLink
   ],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'

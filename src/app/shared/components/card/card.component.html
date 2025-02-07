@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card__header">
     <div class="card__icon">
-      <img class="card__img-icon" [src]="iconUrl" alt="Icon" srcset="">
+      <img class="card__img-icon" [src]="cardInfo.iconWhitePath" alt="Icon" srcset="">
     </div>
     <div class="card__description">
       <span class="card__title">{{ cardInfo.title }}</span>
@@ -12,5 +12,5 @@
     <img class="card__img" [ngSrc]="cardInfo.imgPath" fill alt="" srcset="">
     <div class="card__gradient"></div>
   </div>
-  <button class="card__button" type="button">CONOCER MÁS</button>
+  <button [routerLink]="'/servicios'" [fragment]="cardInfo.id" class="card__button" type="button">CONOCER MÁS</button>
 </div>

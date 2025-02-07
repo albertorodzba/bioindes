@@ -32,10 +32,10 @@
 }
 
 .banner__text {
-  width: 350px;
+  max-width: 350px;
   text-align: center;
   font-weight: 200;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 // TODO: hacer este boton un componente independiente
 .banner__button {

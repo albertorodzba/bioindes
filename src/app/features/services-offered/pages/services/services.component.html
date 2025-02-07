@@ -1,4 +1,4 @@
 @for(service of servicesOffered; track service.name; let i = $index) {
   <div class="decoration" [ngClass]="i % 2== 0 ? 'bg-linear-gradient-blue' : 'bg-linear-gradient-green'"></div>
-  <dual-panel-card [serviceOffered]="service"></dual-panel-card>
+  <dual-panel-card [id]="service.id" [serviceOffered]="service"></dual-panel-card>
 }

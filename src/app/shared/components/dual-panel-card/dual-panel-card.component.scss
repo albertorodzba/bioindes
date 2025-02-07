@@ -35,8 +35,9 @@ $padding-first-panel: 4.3em;
 }
 
 .first-panel__p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
+
 
 .first-panel__header{
   margin-bottom: 2rem;
@@ -62,13 +63,17 @@ $padding-first-panel: 4.3em;
   background-color: var(--white);
 }
 
-.second-panel {
-  overflow: hidden;
+ul, ol, .first-panel__ul {
+  list-style: disc !important;
+  list-style-position: initial !important;
 }
 
 
 
 // SECOND PANEL
+.second-panel {
+  overflow: hidden;
+}
 .second-panel {
   position: relative;
   top: $padding-first-panel;

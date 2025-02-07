@@ -8,6 +8,7 @@
   font-weight: 500;
   font-size: 0.8rem;
   gap: 30px;
+  list-style: none;
 }
 
 .navbar-links__link{
@@ -23,7 +24,7 @@
 
 .navbar__submenu{
   background-color: var(--white);
-  background-color: red;
+  //background-color: red;
   border-radius: 15px;
   color: var(--strong-blue);
   display: grid;
