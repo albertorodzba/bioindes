@@ -115,7 +115,7 @@
 
 @media (min-width: 0px) and (max-width: $breakpoint-md) {
   .services-section__cards-wrapper{
-    grid: repeat(9, 1fr) / repeat(1, 1fr);
+    grid: repeat(7, 1fr) / repeat(1, 1fr);
   }
   .banner__title {
     line-height: 3rem;
@@ -125,7 +125,7 @@
 }
 @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
   .services-section__cards-wrapper{
-    grid: repeat(5, 1fr) / repeat(2, 1fr);
+    grid: repeat(4, 1fr) / repeat(2, 1fr);
   }
 }
 

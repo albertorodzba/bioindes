@@ -1,3 +1,4 @@
+const basePath = "/images/services"
 export const servicios = [
   {
     title: "Estudios Ambientales",
@@ -15,32 +16,32 @@ export const servicios = [
         <li>Programa para la prevención de accidentes.</li>
         <li>Planes de manejo de residuos.</li>
       </ul>`,
-    imgPath: "/images/services/cards-img/EstudiosAmbientales_800x600.png",
+    imgPath: `${basePath}/EstudiosAmbientales2.jpg`,
     iconPath: "/icons/outline-icons/EstudiosAmbientales.svg",
     iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
     id: "estudios-ambientales",
   },
-  {
-    title: "Administración de Riesgo",
-    cardDescription: "Analisis de riesgo de proceso, metodología HazOp, árbol de fallas...",
-    fullText: `
-      <ul class="first-panel__ul">
-        <li>Análisis de riesgo de proceso (ARP).</li>
-        <li>Metodología HazOp.</li>
-        <li>Árbol de fallas.</li>
-        <li>Modelación mediante software PHAST.</li>
-        <li>Personal con certificación TUV.</li>
-        <li>Cartografía en GIS.</li>
-        <li>Seguridad funcional y sistemas instrumentados de seguridad (cálculo del SIL).</li>
-        <li>Atlas de riesgo.</li>
-        <li>Programas de atención a contingencias.</li>
-      </ul>
-    `,
-    imgPath: "/images/services/cards-img/AdministracionDeRiesgo_800x600.jpg",
-    iconPath: "/icons/outline-icons/Riesgo.svg",
-    iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
-    id: "administracion-de-riesgo"
-  },
+  // {
+  //   title: "Administración de Riesgo",
+  //   cardDescription: "Analisis de riesgo de proceso, metodología HazOp, árbol de fallas...",
+  //   fullText: `
+  //     <ul class="first-panel__ul">
+  //       <li>Análisis de riesgo de proceso (ARP).</li>
+  //       <li>Metodología HazOp.</li>
+  //       <li>Árbol de fallas.</li>
+  //       <li>Modelación mediante software PHAST.</li>
+  //       <li>Personal con certificación TUV.</li>
+  //       <li>Cartografía en GIS.</li>
+  //       <li>Seguridad funcional y sistemas instrumentados de seguridad (cálculo del SIL).</li>
+  //       <li>Atlas de riesgo.</li>
+  //       <li>Programas de atención a contingencias.</li>
+  //     </ul>
+  //   `,
+  //   imgPath: `${basePath}/AdministracionDeRiesgo.jpg`,
+  //   iconPath: "/icons/outline-icons/Riesgo.svg",
+  //   iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
+  //   id: "administracion-de-riesgo"
+  // },
   {
     title: "Topografía",
     cardDescription: "Topografía con equipo satelital, cartografía, batimetría...",
@@ -53,9 +54,9 @@ export const servicios = [
       </ul>
 
     `,
-    imgPath: "/images/services/cards-img/Topografia_800x600.jpg",
+    imgPath: `${basePath}/Topografia.jpg`,
     iconPath: "/icons/outline-icons/Topografia.svg",
-    iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
+    iconWhitePath: "/icons/outline-icons-white/Topografia.svg",
     id: "topografia"
   },
   {
@@ -68,9 +69,9 @@ export const servicios = [
         <li>Tecnología GPS y Bluetooth.</li>
       </ul>
     `,
-    imgPath: "/images/services/cards-img/Radiodeteccion_800x600.jpg",
+    imgPath: `${basePath}/Radiodeteccion2.jpg`,
     iconPath: "/icons/outline-icons/Radiodeteccion.svg",
-    iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
+    iconWhitePath: "/icons/outline-icons-white/Radiodeteccion.svg",
     id: "radiodeteccion"
   },
   {
@@ -86,16 +87,16 @@ export const servicios = [
         <li>Sondeos eléctricos verticales (SEV)</li>
       </ul>
     `,
-    imgPath: "/images/services/cards-img/Geofisica_800x600.jpg",
+    imgPath: `${basePath}/Geofisica.jpg`,
     iconPath: "/icons/outline-icons/Geofisica.svg",
-    iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
+    iconWhitePath: "/icons/outline-icons-white/Geofisica.svg",
     id: "geofisica"
   },
   // {
   //   title: "Obra civil",
   //   cardDescription: "Ejecución y supervisión de obra civil y electromecánica...",
   //   fullText: "",
-  //   imgPath: "/images/services/cards-img/ObraCivil_800x600.jpg",
+  //   imgPath: `${basePath}/ObraCivil.jpg`,
   //   iconPath: "/icons/outline-icons/ObraCivil.svg",
   //   iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
   //   id: "obra-civil"
@@ -109,9 +110,9 @@ export const servicios = [
         <li>Termofusión de liner HDPE.</li>
       </ul>
     `,
-    imgPath: "/images/services/cards-img/Termofusion_800x600.jpg",
+    imgPath: `${basePath}/Termofusion2.jpg`,
     iconPath: "/icons/outline-icons/Termofusion.svg",
-    iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
+    iconWhitePath: "/icons/outline-icons-white/Termofusion.svg",
     id: "termofusion"
   },
   {
@@ -125,16 +126,16 @@ export const servicios = [
         <li>Perforación para extracción de núcleos</li>
       </ul>
     `,
-    imgPath: "/images/services/cards-img/Perforacion_800x600.jpg",
+    imgPath: `${basePath}/Perforacion2.jpg`,
     iconPath: "/icons/outline-icons/Perforacion.svg",
-    iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
+    iconWhitePath: "/icons/outline-icons-white/Perforacion.svg",
     id: "perforacion"
   },
   // {
   //   title: "Tierras físicas",
   //   cardDescription: "Equipo Fluke 1623, medición de tierras fisicas...",
   //   fullText: "",
-  //   imgPath: "/images/services/cards-img/TierrasFisicas_800x600.jpg",
+  //   imgPath: `${basePath}/TierrasFisicas.jpg`,
   //   iconPath: "/icons/outline-icons/TierrasFisicas.svg",
   //   iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
   //   id: "tierras-fisicas"
@@ -151,9 +152,9 @@ export const servicios = [
         <li>Planos de localización general (PLG)</li>
       </ul>
     `,
-    imgPath: "/images/services/cards-img/TecnologiaDelProceso_800x600.jpg",
+    imgPath: `${basePath}/TecnologiaDelProceso2.jpg`,
     iconPath: "/icons/outline-icons/TecnologiaDelProceso.svg",
-    iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
+    iconWhitePath: "/icons/outline-icons-white/TecnologiaDelProceso.svg",
     id: "tecnologia-del-proceso"
   },
 ]

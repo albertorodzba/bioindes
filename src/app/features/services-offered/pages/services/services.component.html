@@ -1,3 +1,10 @@
+<div class="services-section__title">
+  <h2 class="services-section__h2">SERVICIOS</h2>
+  <div class="services-section__decoration-div">
+    <img src="/icons/CurvaDegradado.svg" alt="" class="services-section__img">
+  </div>
+</div>
+
 @for(service of servicesOffered; track service.name; let i = $index) {
   <div class="decoration" [ngClass]="i % 2== 0 ? 'bg-linear-gradient-blue' : 'bg-linear-gradient-green'"></div>
   <dual-panel-card [id]="service.id" [serviceOffered]="service"></dual-panel-card>

@@ -17,3 +17,20 @@
 .bg-linear-gradient-blue {
   background: $blue-horizontal-gradient;
 }
+
+.services-section__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.services-section__h2 {
+  font-size: $font-size-xl;
+  color: var(--strong-blue);
+}
+
+.services-section__decoration-div{
+  width: 17em;
+}

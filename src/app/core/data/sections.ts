@@ -36,12 +36,12 @@ export const Sections: NavbarLink[] =  [
         fragment: "estudios-ambientales",
         href: "/servicios/",
       },
-      {
-        name: "Administración de riesgo",
-        icon: `${iconsDirPathBase}/Riesgo.svg`,
-        fragment: "administracion-de-riesgo",
-        href: "/servicios/",
-      },
+      // {
+      //   name: "Administración de riesgo",
+      //   icon: `${iconsDirPathBase}/Riesgo.svg`,
+      //   fragment: "administracion-de-riesgo",
+      //   href: "/servicios/",
+      // },
       {
         name: "Topografía",
         icon: `${iconsDirPathBase}/Topografia.svg`,
