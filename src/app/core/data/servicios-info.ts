@@ -1,7 +1,7 @@
 const basePath = "/images/services"
 export const servicios = [
   {
-    title: "Estudios Ambientales",
+    title: "Estudios ambientales",
     cardDescription: "Manifiesto de impacto ambiental, programa para la prevención de accidentes, estudio de riesgo ambiental...",
     fullText: `
       <ul class="first-panel__ul">
@@ -54,7 +54,7 @@ export const servicios = [
       </ul>
 
     `,
-    imgPath: `${basePath}/Topografia.jpg`,
+    imgPath: `${basePath}/Topografia2.jpg`,
     iconPath: "/icons/outline-icons/Topografia.svg",
     iconWhitePath: "/icons/outline-icons-white/Topografia.svg",
     id: "topografia"
@@ -87,7 +87,7 @@ export const servicios = [
         <li>Sondeos eléctricos verticales (SEV)</li>
       </ul>
     `,
-    imgPath: `${basePath}/Geofisica.jpg`,
+    imgPath: `${basePath}/Geofisica2.jpg`,
     iconPath: "/icons/outline-icons/Geofisica.svg",
     iconWhitePath: "/icons/outline-icons-white/Geofisica.svg",
     id: "geofisica"
@@ -101,20 +101,20 @@ export const servicios = [
   //   iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
   //   id: "obra-civil"
   // },
-  {
-    title: "Termofusión",
-    cardDescription: "Membrana ecológica, termofusión de liner HDPE...",
-    fullText: `
-      <ul class="first-panel__ul">
-        <li>Membrana ecológica.</li>
-        <li>Termofusión de liner HDPE.</li>
-      </ul>
-    `,
-    imgPath: `${basePath}/Termofusion2.jpg`,
-    iconPath: "/icons/outline-icons/Termofusion.svg",
-    iconWhitePath: "/icons/outline-icons-white/Termofusion.svg",
-    id: "termofusion"
-  },
+  // {
+  //   title: "Termofusión",
+  //   cardDescription: "Membrana ecológica, termofusión de liner HDPE...",
+  //   fullText: `
+  //     <ul class="first-panel__ul">
+  //       <li>Membrana ecológica.</li>
+  //       <li>Termofusión de liner HDPE.</li>
+  //     </ul>
+  //   `,
+  //   imgPath: `${basePath}/Termofusion2.jpg`,
+  //   iconPath: "/icons/outline-icons/Termofusion.svg",
+  //   iconWhitePath: "/icons/outline-icons-white/Termofusion.svg",
+  //   id: "termofusion"
+  // },
   {
     title: "Perforación",
     cardDescription: "Perforación rotaria y/o neumática, pozos de monitoreo, pozos para extracción de agua...",
