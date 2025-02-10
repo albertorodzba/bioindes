@@ -25,15 +25,15 @@ export class ContactUsFormComponent {
     mensaje: new FormControl('', Validators.required)
   });
 
-  whatsappPhone: string = "528335395978"
-  mailTo: string = "mario_bautista1234@hotmail.com"
+  mailTo: string = "bioindes@gmail.com"
+  wppLink: string ="";
 
   submit(): void {
     if(this.contactUsForm.invalid){
       // console.log("Estupido");
     } else {
       const formValues = this.contactUsForm.value;
-      const wppLink: string= `https://wa.me/${this.whatsappPhone}?text=${encodeURIComponent(formValues.mensaje)}
+      this.wppLink = `mailto:${this.mailTo}?subject=Más información sobre los servicios de Bioindes&body=${encodeURIComponent(formValues.mensaje)}
       %0A%0ATambien le dejo mis datos:
       %0A%0A*Nombre:* ${encodeURIComponent(formValues.nombre)},
       %0A*Email:* ${encodeURIComponent(formValues.correo)},
@@ -42,12 +42,12 @@ export class ContactUsFormComponent {
       %0A*CP:* ${encodeURIComponent(formValues.cp)},
       %0A*Y pertenezco a la empresa:* ${encodeURIComponent(formValues.empresa)}
       `;
-      this.sendWhatsapp(wppLink)
+      this.send(this.wppLink)
     }
     // console.log("formulario", this.contactUsForm.value);
   }
 
-  sendWhatsapp(wppLink: string): void {
+  send(wppLink: string): void {
     window.open(wppLink, "_blank");
   }
 }
