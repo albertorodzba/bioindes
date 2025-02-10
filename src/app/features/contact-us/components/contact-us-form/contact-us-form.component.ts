@@ -30,7 +30,6 @@ export class ContactUsFormComponent {
 
   submit(): void {
     if(this.contactUsForm.invalid){
-      // console.log("Estupido");
     } else {
       const formValues = this.contactUsForm.value;
       this.wppLink = `mailto:${this.mailTo}?subject=Más información sobre los servicios de Bioindes&body=${encodeURIComponent(formValues.mensaje)}
