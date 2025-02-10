@@ -44,12 +44,12 @@ export const servicios = [
   // },
   {
     title: "Topografía",
-    cardDescription: "Topografía con equipo satelital, cartografía, batimetría...",
+    cardDescription: "Topografía con equipo satelital, cartografía, Fotogrametría...",
     fullText: `
       <ul class="first-panel__ul">
         <li>Topografía con equipo satelital.</li>
         <li>Cartografía.</li>
-        <li>Batimetría.</li>
+        <li>Fotogrametría.</li>
         <li>Trazo y nivelación de proyectos para construcción.</li>
       </ul>
 
@@ -80,14 +80,13 @@ export const servicios = [
     fullText: `
       <ul class="first-panel__ul">
         <li>Caracterización de sitios contaminados</li>
-        <li>Remediación de sitios contaminados</li>
         <li>Búsqueda de agua subterránea</li>
         <li>Georadar de penetración terrestre (GPR)</li>
         <li>Tomografía eléctrica</li>
         <li>Sondeos eléctricos verticales (SEV)</li>
       </ul>
     `,
-    imgPath: `${basePath}/Geofisica2.jpg`,
+    imgPath: `${basePath}/Geofisica.jpg`,
     iconPath: "/icons/outline-icons/Geofisica.svg",
     iconWhitePath: "/icons/outline-icons-white/Geofisica.svg",
     id: "geofisica"
@@ -126,7 +125,7 @@ export const servicios = [
         <li>Perforación para extracción de núcleos</li>
       </ul>
     `,
-    imgPath: `${basePath}/Perforacion2.jpg`,
+    imgPath: `${basePath}/Perforacion.jpg`,
     iconPath: "/icons/outline-icons/Perforacion.svg",
     iconWhitePath: "/icons/outline-icons-white/Perforacion.svg",
     id: "perforacion"

@@ -30,7 +30,7 @@ export class ContactUsFormComponent {
 
   submit(): void {
     if(this.contactUsForm.invalid){
-      console.log("Estupido");
+      // console.log("Estupido");
     } else {
       const formValues = this.contactUsForm.value;
       const wppLink: string= `https://wa.me/${this.whatsappPhone}?text=${encodeURIComponent(formValues.mensaje)}
@@ -44,7 +44,7 @@ export class ContactUsFormComponent {
       `;
       this.sendWhatsapp(wppLink)
     }
-    console.log("formulario", this.contactUsForm.value);
+    // console.log("formulario", this.contactUsForm.value);
   }
 
   sendWhatsapp(wppLink: string): void {
