@@ -25,7 +25,7 @@ export const Sections: NavbarLink[] =  [
         href: "/nosotros/",
       },
       {
-        name: "Politica de calidad",
+        name: "Política de calidad",
         fragment: "politica",
         href: "/nosotros/",
       }
