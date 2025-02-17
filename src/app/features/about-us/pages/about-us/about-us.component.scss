@@ -83,6 +83,10 @@ hr {
   background-color: var(--white)
 }
 
+.section__h1 {
+  text-align: center;
+}
+
 @media (min-width: 0) and (max-width: $breakpoint-md) {
   .sections-wrapper {
     flex-direction: column;
