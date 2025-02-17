@@ -121,6 +121,14 @@ hr {
   .section__img-wrapper {
     height: 400px;
   }
+
+  .section--flex-column {
+    flex-direction: column;
+  }
+
+  .section__img-wrapper--height-sm {
+    height: 250px;
+  }
 }
 
 @media (min-width: 0) and (max-width: $breakpoint-sm) {

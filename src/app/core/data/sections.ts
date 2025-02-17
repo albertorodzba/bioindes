@@ -23,6 +23,11 @@ export const Sections: NavbarLink[] =  [
         name: "Visión",
         fragment: "vision",
         href: "/nosotros/",
+      },
+      {
+        name: "Politica de calidad",
+        fragment: "politica",
+        href: "/nosotros/",
       }
     ]
   },
@@ -60,12 +65,12 @@ export const Sections: NavbarLink[] =  [
         fragment: "geofisica",
         href: "/servicios/",
       },
-      // {
-      //   name: "Termofusión",
-      //   icon: `${iconsDirPathBase}/Termofusion.svg`,
-      //   fragment: "termofusion",
-      //   href: "/servicios/",
-      // },
+      {
+        name: "Termofusión",
+        icon: `${iconsDirPathBase}/Termofusion.svg`,
+        fragment: "termofusion",
+        href: "/servicios/",
+      },
       {
         name: "Perforación",
         icon: `${iconsDirPathBase}/Perforacion.svg`,

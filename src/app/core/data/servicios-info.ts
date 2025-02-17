@@ -2,19 +2,20 @@ const basePath = "/images/services"
 export const servicios = [
   {
     title: "Estudios ambientales",
-    cardDescription: "Manifiesto de impacto ambiental, programa para la prevención de accidentes, estudio de riesgo ambiental...",
+    cardDescription: "Estudios de impacto ambiental, línea base ambiental (LBA)...",
     fullText: `
       <ul class="first-panel__ul">
-        <li>Línea base ambiental.</li>
-        <li>Impacto social.</li>
-        <li>Impacto ambiental.</li>
-        <li>Exención al impacto ambiental.</li>
-        <li>Evaluaciones iniciales de sitio.</li>
-        <li>Cédula de operación anual.</li>
-        <li>Estudio de daños ambientales.</li>
-        <li>Riesgo ambiental.</li>
-        <li>Programa para la prevención de accidentes.</li>
+        <li>Estudios de impacto ambiental.</li>
+        <li>Línea base ambiental (LBA).</li>
+        <li>Evaluación de Impacto Social (EvIS).</li>
+        <li>Estudios de Riesgo ambiental (ERA).</li>
+        <li>Programa para la prevención de accidentes (PPA).</li>
+        <li>Análisis de riesgo de proceso (ARP).</li>
+        <li>Elaboración e implementación de SASISOPA.</li>
+        <li>Atlas de riesgo.</li>
+        <li>Protocolo de Respuesta a Emergencias (PRE).</li>
         <li>Planes de manejo de residuos.</li>
+        <li>Cédula de operación anual (COA).</li>
       </ul>`,
     imgPath: `${basePath}/EstudiosAmbientales2.jpg`,
     iconPath: "/icons/outline-icons/EstudiosAmbientales.svg",
@@ -48,11 +49,11 @@ export const servicios = [
     fullText: `
       <ul class="first-panel__ul">
         <li>Topografía con equipo satelital.</li>
+        <li>Deslindes.</li>
         <li>Cartografía.</li>
         <li>Fotogrametría.</li>
         <li>Trazo y nivelación de proyectos para construcción.</li>
       </ul>
-
     `,
     imgPath: `${basePath}/Topografia2.jpg`,
     iconPath: "/icons/outline-icons/Topografia.svg",
@@ -61,29 +62,35 @@ export const servicios = [
   },
   {
     title: "Radiodetección",
-    cardDescription: "Búsqueda de tubería subterránea, equipo RD-8100....",
+    cardDescription: "Equipo RD-8100, Búsqueda de tubería subterránea...",
     fullText: `
       <ul class="first-panel__ul">
+        <li>Equipo RD-8100. Tecnología GPS.</li>
         <li>Búsqueda de tubería subterránea.</li>
-        <li>Equipo RD-8100.</li>
-        <li>Tecnología GPS y Bluetooth.</li>
+        <li>Apoyo a celaje y/o identificación de ductos terrestres.</li>
+        <li>Trazo y levantamiento de detalles de ductos en localizaciones de pozos.</li>
       </ul>
     `,
-    imgPath: `${basePath}/Radiodeteccion2.jpg`,
+    imgPath: `${basePath}/Radiodeteccion.jpg`,
     iconPath: "/icons/outline-icons/Radiodeteccion.svg",
     iconWhitePath: "/icons/outline-icons-white/Radiodeteccion.svg",
     id: "radiodeteccion"
   },
   {
     title: "Geofísica",
-    cardDescription: "Caracterización de sitios contaminados, remediación de sitios contaminados...",
+    cardDescription: "Caracterización de sitios contaminados, búsqueda de agua subterránea...",
     fullText: `
       <ul class="first-panel__ul">
         <li>Caracterización de sitios contaminados</li>
         <li>Búsqueda de agua subterránea</li>
-        <li>Georadar de penetración terrestre (GPR)</li>
-        <li>Tomografía eléctrica</li>
-        <li>Sondeos eléctricos verticales (SEV)</li>
+        <li>Identificación estratigráfica</li>
+        <br>
+          <p><b>Técnicas:</b></p>
+          <ul class="pl-2rem">
+            <li>Georadar</li>
+            <li>Tomografía</li>
+            <li>Sondeos eléctricos verticales (SEV)</li>
+          </ul>
       </ul>
     `,
     imgPath: `${basePath}/Geofisica.jpg`,
@@ -100,29 +107,38 @@ export const servicios = [
   //   iconWhitePath: "/icons/outline-icons-white/EstudiosAmbientales.svg",
   //   id: "obra-civil"
   // },
-  // {
-  //   title: "Termofusión",
-  //   cardDescription: "Membrana ecológica, termofusión de liner HDPE...",
-  //   fullText: `
-  //     <ul class="first-panel__ul">
-  //       <li>Membrana ecológica.</li>
-  //       <li>Termofusión de liner HDPE.</li>
-  //     </ul>
-  //   `,
-  //   imgPath: `${basePath}/Termofusion2.jpg`,
-  //   iconPath: "/icons/outline-icons/Termofusion.svg",
-  //   iconWhitePath: "/icons/outline-icons-white/Termofusion.svg",
-  //   id: "termofusion"
-  // },
+  {
+    title: "Termofusión",
+    cardDescription: "Membrana de contención secundaria de hasta un espesor de 1.5mm...",
+    fullText: `
+      <ul class="first-panel__ul">
+        <li>Membrana de contención secundaria de hasta un espesor de 1.5 mm.</li>
+      </ul>
+      <br>
+      <p><b>Aplicaciones y beneficios:</b></p>
+      <ul class="pl-2rem">
+        <li>Contención de derrames y protección ambiental del suelo.</li>
+        <li>Material flexible, fácil de transportar y limpiar.</li>
+        <li>Adaptable a las condiciones irregulares del terreno.</li>
+        <li>Resistente a hidrocarburos.</li>
+      </ul>
+    `,
+    imgPath: `${basePath}/Termofusion.jpg`,
+    iconPath: "/icons/outline-icons/Termofusion.svg",
+    iconWhitePath: "/icons/outline-icons-white/Termofusion.svg",
+    id: "termofusion"
+  },
   {
     title: "Perforación",
-    cardDescription: "Perforación rotaria y/o neumática, pozos de monitoreo, pozos para extracción de agua...",
+    cardDescription: "Perforación rotaria y/o neumática, perforación de pozos de monitoreo...",
     fullText: `
       <ul class="first-panel__ul">
         <li>Perforación rotaria y/o neumática</li>
-        <li>Pozos de monitoreo</li>
-        <li>Pozos para extracción de agua</li>
+        <li>Perforación de pozos de monitoreo</li>
+        <li>Perforación de pozos para extracción de agua</li>
+        <li>Perforación de pozos para control de emanaciones naturales de hidrocarburos</li>
         <li>Perforación para extracción de núcleos</li>
+        <li>Trámite de concesiones ante la Comisión Nacional del Agua</li>
       </ul>
     `,
     imgPath: `${basePath}/Perforacion.jpg`,
