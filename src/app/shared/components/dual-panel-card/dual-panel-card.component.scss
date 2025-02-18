@@ -20,7 +20,6 @@ $padding-first-panel: 4.3em;
 
 .first-panel {
   padding: $padding-first-panel;
-  //padding: 69px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -29,6 +28,7 @@ $padding-first-panel: 4.3em;
 .first-panel__header {
   display: flex;
   align-items: center;
+  margin-bottom: $padding-mobile-x-sm;
 }
 
 .first-panel__header, .first-panel__body {
@@ -40,20 +40,23 @@ $padding-first-panel: 4.3em;
   font-size: 0.9rem;
 }
 
-
-.first-panel__header{
-  margin-bottom: 2rem;
+.first-panel__title-wrapper{
+  width: 70%;
 }
 
 .first-panel__h2 {
   color: var(--strong-blue);
 }
+
 // icono
 .first-panel__icon-wrapper{
-  margin-right: 1.8rem;
+  margin-right: 0.5rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
 .first-panel__img {
-  width: 6rem;
+  width: 8.5rem;
 }
 
 .first-panel, .second-panel {
@@ -170,12 +173,14 @@ ul, ol, .first-panel__ul {
 @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl){
   .first-panel, .second-panel {
     width: 30rem;
+    height: 600px;
   }
 }
 
 @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg){
   .first-panel, .second-panel {
     width: 30rem;
+    height: 500px;
   }
 }
 
